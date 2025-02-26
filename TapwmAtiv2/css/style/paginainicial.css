@@ -27,6 +27,7 @@ nav {
 }
 
 nav ul li {
+    
     display: inline;
     margin: 15px;
 }
@@ -41,7 +42,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #fddfff;
+    color: #9d68aa;
 }
 
 /* Destacar a seção ativa no menu */
@@ -72,15 +73,19 @@ h2 {
 ul {
     list-style: none;
     padding: 0;
+    
 }
 
 ul li {
-    background: #e9ecef;
+    background: #8139b171;
     margin: 5px 0;
     padding: 10px;
     border-radius: 5px;
     transition: background 0.3s;
 }
+
+
+
 
 ul li:hover {
     background: #edd6f7;
@@ -88,6 +93,13 @@ ul li:hover {
 
 a {
     color: #bf25fc;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+a2 {
+    color: #f1c2ff;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
@@ -119,7 +131,7 @@ a:hover {
 
 /* Estilos do modo escuro */
 .dark-mode {
-    background-color: #121212;
+    background-color: #bf25fc;
     color: #f8f9fa;
 }
 
@@ -135,7 +147,7 @@ a:hover {
 
 
 .dark-mode nav ul li a {
-    color: #f8f9fa;
+    color: #bf25fc;
 }
 
 .dark-mode nav ul li a:hover {
@@ -157,3 +169,4 @@ a:hover {
 .dark-mode #toggle-theme:hover {
     background: #bf25fc;
 }
+
