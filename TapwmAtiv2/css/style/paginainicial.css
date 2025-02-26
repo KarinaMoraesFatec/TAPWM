@@ -1,14 +1,14 @@
-
+/* Estilos gerais */
 body {
     background-image: url(capaa.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #4E0076;
     font-family: 'Arial', sans-serif;
+    transition: background 0.3s, color 0.3s;
 }
 
 header {
-
     color: #4E0076;
     text-align: center;
     padding: 20px;
@@ -16,19 +16,19 @@ header {
     font-size: 24px;
     font-weight: bold;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, color 0.3s;
 }
 
 nav {
-    
     padding: 5px;
     text-align: center;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s;
 }
 
 nav ul li {
     display: inline;
-    margin: 15 15px;
-    
+    margin: 15px;
 }
 
 nav ul li a {
@@ -37,21 +37,22 @@ nav ul li a {
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
-    transition: color 0.3s;
-}
- ul li1 {
-    color: #9d68aa;
-    scroll-margin-top: 80px;
-    text-decoration: none;
-    font-size: 8px;
-    font-weight: bold;
-    transition: color 0.3s;
+    transition: color 0.3s, border-bottom 0.3s;
 }
 
 nav ul li a:hover {
     color: #fddfff;
 }
 
+/* Destacar a seção ativa no menu */
+nav ul li a.active {
+    color: #17a2b8;
+    font-weight: bold;
+    border-bottom: 2px solid #17a2b8;
+    padding-bottom: 5px;
+}
+
+/* Seções */
 section {
     padding: 30px;
     margin: 20px auto;
@@ -59,6 +60,7 @@ section {
     background: white;
     border-radius: 30px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, color 0.3s;
 }
 
 h2 {
@@ -88,22 +90,70 @@ a {
     color: #bf25fc;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s;
 }
 
 a:hover {
     text-decoration: underline;
 }
 
-.script2{
+/* Botão de alternância do modo escuro */
+#toggle-theme {
     position: fixed;
-    left: 90%;
-    top: 90%;
-    z-index: 1000;
-    background-color: var(--primary-color);
+    bottom: 20px;
+    right: 20px;
+    background: #bf25fc;
+    color: white;
     border: none;
-    cursor: pointer;
-    width: 45px;
-    height: 45px;
+    padding: 10px 15px;
     border-radius: 50px;
-    
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s, transform 0.2s, color 0.3s;
+}
+
+#toggle-theme:hover {
+    background: #8c129c;
+    transform: scale(1.1);
+}
+
+/* Estilos do modo escuro */
+.dark-mode {
+    background-color: #121212;
+    color: #f8f9fa;
+}
+
+.dark-mode body {
+    background-image: none;
+    background-color: #1e1e1e;
+}
+
+.dark-mode header {
+    color: #d83dffb7;
+    background: linear-gradient(to right, #333, #444);
+}
+
+
+.dark-mode nav ul li a {
+    color: #f8f9fa;
+}
+
+.dark-mode nav ul li a:hover {
+    color: #cc4aec;
+}
+
+.dark-mode section {
+    background: #1e1e1e;
+    color: #f8f9fa;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+/* Ajuste do botão de modo escuro */
+.dark-mode #toggle-theme {
+    background: #f8f9fa;
+    color: #121212;
+}
+
+.dark-mode #toggle-theme:hover {
+    background: #bf25fc;
 }
