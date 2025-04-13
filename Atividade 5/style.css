@@ -1,0 +1,117 @@
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    background: linear-gradient(to right, #1a359e, #02194f);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    text-align: center;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+  }
+  
+  h1 {
+    color: #0b2853;
+  }
+  
+  .buttons button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    transition: background 0.3s;
+  }
+  
+  .buttons button:hover {
+    background-color: #caf0f8;
+  }
+  
+  .resultado {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #023e8a;
+  }
+  .container {
+    text-align: center;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 380px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Isso empurra o botão pro fim */
+  }
+  
+  .conteudo {
+    flex-grow: 1;
+  }
+  
+  #btn-reiniciar {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #90e0ef;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  #btn-reiniciar:hover {
+    background-color: #48cae4;
+  }
+  
+  img {
+    width: 60px;
+    height: 60px;
+    max-height: 100%;
+}
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 300px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  }
+  
+  .modal-content button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #00b4d8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .modal-content button:hover {
+    background-color: #0077b6;
+  }
+  

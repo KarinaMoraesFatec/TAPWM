@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pedra, Papel ou Tesoura</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h2>Seja Bem-vindo! 🎮</h2>
+            <p>
+              Ao jogo <strong>Pedra, Papel ou Tesoura,</strong> uma disputa entre dois jogadores<br> <strong>(Você e o computador).</strong><br><br>
+              Ambos escolhem uma entre três opções:<br>
+              <strong>Pedra</strong>, <strong>Papel</strong> ou <strong>Tesoura</strong>.
+            </p>
+            <p>
+              A decisão é feita com base nas seguintes regras:
+            </p>
+            <ul style="text-align: left; padding-left: 20px;">
+              <li>🗿Pedra ganha da Tesoura</li>
+              <li>📄 Papel ganha da Pedra</li>
+              <li>✂️ Tesoura ganha do Papel</li>
+              <li> Se os dois escolherem o mesmo elemento, é <strong>empate!</strong></li>
+            </ul>
+           <button onclick="fecharModal()">Vamos jogar!</button>
+        </div>
+      </div>
+      
+    <div class="container">
+        <div class="conteudo">
+          <h1>Pedra, Papel ou Tesoura</h1>
+          
+          <p>Escolha sua opção e descubra se consegue<br> vencer o computador!</p>
+          <br>
+          <div class="buttons">
+            <button onclick="jogar('pedra')"><img src="img/pedra.png"> </button>
+            <button onclick="jogar('papel')"><img src="img/papel.png">  </button>
+            <button onclick="jogar('tesoura')"><img src="img/tesoura.png"> </button>
+          </div>
+          <div class="resultado" id="resultado"></div>
+          <br>
+          <button id="btn-reiniciar" onclick="reiniciarJogo()" style="display: none;">🔄 Jogar Novamente</button>
+        </div>
+    
+      </div>
+  <script src="ppt.js"></script>
+</body>
+</html>
