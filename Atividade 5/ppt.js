@@ -17,7 +17,7 @@ function jogar(escolhaUsuario) {
     if (escolhaUsuario === escolhaComputador) {
       resultado += "Resultado: Empate!";
     } else if (
-      (escolhaUsuario === 'resultadopedra.png' && escolhaComputador === 'tesoura.png') ||
+      (escolhaUsuario === 'pedra.png' && escolhaComputador === 'tesoura.png') ||
       (escolhaUsuario === 'tesoura.png' && escolhaComputador === 'papel.png') ||
       (escolhaUsuario === 'papel.png' && escolhaComputador === 'pedra.png')
     ) {
