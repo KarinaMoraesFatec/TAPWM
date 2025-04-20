@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Pesquisa de Opinião</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+          <h2>Seja bem-vindo à pesquisa <br>de opinião da Netflix 🎬</h2>
+                  <p> Obrigado por assistir! Agora queremos saber o que você achou da experiência.😊</p>
+                  <p style="text-align: left;"> Esta pesquisa é rápida e anônima, e ajudará a melhorar as próximas exibições. </p>
+                  <p style="text-align: left;">
+                    Após preencher com sua <strong>idade</strong>, <strong>sexo</strong> e sua <strong>opinião</strong> sobre o filme,<br>
+                    seus dados serão salvos para análise.
+                  </p>
+                  <p style="text-align: left;">
+                    Assim que pelo menos <strong>3 pessoas</strong> responderem, será possível ver os <strong>resultados e porcentagens</strong> das avaliações!
+                  </p>
+              
+                  <button onclick="fecharModal()">Começar Pesquisa</button>
+                </div>
+              </div>
+              
+      
+
+  <div class="container">
+    <h1>Pesquisa de Satisfação</h1>
+
+    <form id="formulario">
+      <div class="form-group">
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" required>
+      </div>
+
+      <div class="form-group">
+        <label for="sexo">Sexo:</label>
+        <select id="sexo" required>
+          <option value="">Selecione</option>
+          <option value="masculino">Masculino</option>
+          <option value="feminino">Feminino</option>
+          <option value="outros">Outros</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="opiniao">Opinião:</label>
+        <select id="opiniao" required>
+          <option value="">Selecione</option>
+          <option value="4">Ótimo</option>
+          <option value="3">Bom</option>
+          <option value="2">Regular</option>
+          <option value="1">Péssimo</option>
+        </select>
+      </div>
+<br>
+      <button type="submit">Enviar</button>
+    </form>
+
+    <!-- Botão aparece após a 3ª resposta -->
+    <button id="verResultados" class="hidden">Ver Resultados</button>
+     
+     <!-- Resultados aparecem ao clicar no botão -->
+     <div id="resultados" class="resultado hidden"></div>
+    <!-- Botão aparece após a 3ª resposta aparecer -->
+    <button id="fecharResultados" class="hidden">Fechar Resultados</button>
+
+    </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
