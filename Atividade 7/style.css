@@ -1,0 +1,146 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #c7a386;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(165, 124, 91, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #fffaf3;
+    padding: 20px;
+    border-radius: 25px;
+    text-align: center;
+    border: 2px solid #a57c5b;
+    box-shadow: 0 4px 8px rgba(165, 124, 91, 0.3);
+}
+
+.modal-content h2 {
+    color: #7a5c41;
+    margin-bottom: 10px;
+}
+
+.modal-content p {
+    color: #7a5c41;
+    margin: 10px 0;
+}
+
+#fecharModal {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #a57c5b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#fecharModal:hover {
+    background-color: #8d6849;
+}
+
+/* Conteúdo Principal */
+.container {
+    background-color: #fffaf3;
+    border: 2px solid #a57c5b;
+    border-radius: 12px;
+    padding: 30px;
+    width: 320px;
+    margin: 40px auto;
+    box-shadow: 0 4px 8px rgba(165, 124, 91, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    color: #7a5c41;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #7a5c41;
+    font-weight: bold;
+}
+
+input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #a57c5b;
+    border-radius: 8px;
+    background-color: #fefaf5;
+}
+
+button[type="submit"] {
+    padding: 10px;
+    background-color: #a57c5b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #8d6849;
+}
+
+#resultado {
+    margin-top: 20px;
+    text-align: center;
+    color: #7a5c41;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#tentarNovamente {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #a57c5b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#tentarNovamente:hover {
+    background-color: #8d6849;
+}
+
+/* Imagem do triângulo */
+#imagemTriangulo {
+    margin-top: 15px;
+}
+
+.imagem-triangulo {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}

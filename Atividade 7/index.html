@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Triângulo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Modal de explicação -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h2>🌟 Desafio do Triângulo 🌟</h2><br>
+            <p>Seja bem-vindo(a) ao nosso jogo de lógica!</p>
+            <p>Aqui, você vai informar três valores e nós vamos descobrir juntos:</p>
+            <ul><p>1- Se é possível formar um triângulo;</p>
+                <p>2- Qual tipo de triângulo ele é: 
+                    <strong>Equilátero</strong>, <strong>Isósceles</strong> ou <strong>Escaleno</strong>.</p>
+            </ul>
+            <p>Preencha os três lados e clique em <strong>"Verificar"</strong> para começar!</p>
+            <button id="fecharModal">Vamos lá!</button>
+        </div>
+    </div>
+
+
+    <!-- Conteúdo principal -->
+    <div class="container">
+        <h1>Triângulos 📐</h1>
+        <form id="triangleForm">
+            <label for="ladoA">Lado A:</label>
+            <input type="text" id="ladoA" name="ladoA" placeholder="Digite um número" required>
+
+            <label for="ladoB">Lado B:</label>
+            <input type="text" id="ladoB" name="ladoB" placeholder="Digite um segundo número"  required>
+
+            <label for="ladoC">Lado C:</label>
+            <input type="text" id="ladoC" name="ladoC" placeholder="Digite um terceiro número"  required>
+
+            <button type="submit">Verificar</button>
+        </form>
+        <div id="resultado"></div>
+        <div id="imagemTriangulo"></div>
+        <button id="tentarNovamente" style="display: none;">Tentar Novamente</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
