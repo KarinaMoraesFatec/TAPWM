@@ -1,0 +1,31 @@
+/* Estilo da página */
+
+/* Cor de fundo azul-marinho */
+body {
+    background-color: #031020;
+    color: #c9bfff; /* rosa bebê para o texto */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Título */
+h1 {
+    color: #c0b0fa; /* rosa bebê mais forte */
+}
+
+/* Caixa de exibição */
+.container {
+    background-color: #072346;
+    border: 2px solid #a8b5ff; /* borda rosa bebê */
+    border-radius: 30px;
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+}
+
+/* Texto da saída */
+#saida {
+    font-size: 18px;
+}
