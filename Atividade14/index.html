@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade 14 - Formulário</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Formulário-Atividade 14</h1>
+    
+    <form name="meuForm" onsubmit="return validar()">
+      
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" placeholder="Digite seu nome...">
+      
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" placeholder="exemplo@email.com">
+      
+      <label for="comentario">Comentário:</label>
+      <textarea id="comentario" name="comentario" rows="4" placeholder="Digite seu comentário com mais de 20 caracteres..."></textarea>
+      
+      <div class="pesquisa">
+        <p>Pesquisa de Campo:</p>
+        <span>É a sua primeira vez nesta página?</span>
+        <div class="radios">
+          <label><input type="radio" name="visita" value="sim"> Sim</label>
+          <label><input type="radio" name="visita" value="nao"> Não</label>
+        </div>
+      </div>
+      
+      <div class="botoes">
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
